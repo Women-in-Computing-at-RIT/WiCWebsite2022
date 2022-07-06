@@ -1,1 +1,0 @@
-# WiCWebsite2022
