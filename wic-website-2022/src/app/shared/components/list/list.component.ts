@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ListComponent {
 
-  @Input() list!: List;
+  // @Input() list!: List;
 
   constructor() { }
 
