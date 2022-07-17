@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToolBarModule } from './modules/wic-toolbar/wic-toolbar.module';
+import { WicToolBarModule } from './modules/wic-toolbar/wic-toolbar.module';
+import { HomePageModule } from './modules/wic-toolbar/home-page/home-page.module';
 
 @NgModule({
   declarations: [		
@@ -12,9 +13,10 @@ import { ToolBarModule } from './modules/wic-toolbar/wic-toolbar.module';
    ],
   imports: [
     BrowserModule,
-    ToolBarModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    WicToolBarModule,
+    BrowserAnimationsModule,
+    HomePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

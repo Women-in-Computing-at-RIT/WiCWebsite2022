@@ -4,6 +4,8 @@ import { WicToolbarComponent } from './wic-toolbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatMenuModule} from '@angular/material/menu'; 
+import { MenuButtonModule } from '@app/shared/components/menu-button/menu-button.module';
+import { PipesModule } from '@app/shared/pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -11,7 +13,10 @@ import {MatMenuModule} from '@angular/material/menu';
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
+    MenuButtonModule,
+    PipesModule,
   ],
-  declarations: [WicToolbarComponent]
+  declarations: [WicToolbarComponent],
+  exports: [WicToolbarComponent],
 })
-export class ToolBarModule { }
+export class WicToolBarModule { }

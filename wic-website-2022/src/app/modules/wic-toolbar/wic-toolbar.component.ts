@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, MissingTranslationStrategy, OnInit } from '@angular/core';
 import Button from './models/toolbar-button.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-wic-toolbar',
@@ -11,51 +12,50 @@ export class WicToolbarComponent {
   toolbarButtons: Button[] = [
     {
       text: 'home',
-      links: ''
-    },
-    {
+      links: [{link: '/', text: '', }]
+    }, {
       text: 'about',
       links: [
-        'mission', 
-        'faq', 
-        'alumni', 
-        'scholarships', 
-        'tutoring' // TODO: move from this menu later?
+        { link: 'mission', text: 'mission' },
+        { link: 'faq', text: 'faq' },
+        { link: 'alumni', text: 'alumni' },
+        { link: 'scholarships', text: 'scholarships' },
+        { link: 'tutoring', text: 'tutoring' }, // TODO: move from this menu later?
       ]
-    },
-    {
+    }, {
       text: 'events',
       links: [
-        'after hours',
-        'upcoming calendar',
-        'wichacks',
-        'annual events'
+        { link: 'afterhours', text: 'after hours' },
+        { link: 'events', text: 'upcoming calendar' },
+        { link: 'wichacks', text: 'wichacks' },
+        { link: 'scholarships', text: 'scholarships' },
+        { link: 'annualevents', text: 'annual events' },
       ]
-    },
-    {
+    }, {
       text: 'committees',
       links: [
-        'committee heads',
-        'projects',
-        'allies',
-        'outreach'
+        { link: 'committees', text: 'committee heads' },
+        { link: 'projects', text: 'projects' },
+        { link: 'allies', text: 'allies' },
+        { link: 'outreach', text: 'outreach' },
       ]
-    },
-    {
-      text: 'blog',
-      links: 'blog'
-    },
-    {
-      text: 'sponsor',
-      links: 'sponsor'
-    },
-    {
-      text: 'contact us',
-      links: 'contact'
+    },{ 
+      text: 'blog', 
+      links: [{link: 'blog', text: '', }]
+    }, { 
+      text: 'sponsor', 
+      links: [{link: 'sponsor', text: '', }]
+    }, { 
+      text: 'contact us', 
+      links: [{link: 'contact', text: '', }]
     },
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  goToLink(link: string) {
+    this.router.navigate([`/${link}`]);
+  }
 
   // ngOnInit() {
   // }
