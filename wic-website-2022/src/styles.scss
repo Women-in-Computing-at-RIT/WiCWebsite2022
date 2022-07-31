@@ -1,12 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --accent: #4D1E5B;
-  --accent2: #FDC000;
+  --accent: #4d1e5b;
+  --accent2: #fdc000;
   --text: #2b2b2b;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 mat-toolbar-row {
   background-color: var(--accent);
@@ -16,11 +22,10 @@ h1 {
 }
 button {
   text-transform: uppercase;
-
 }
 section {
   box-sizing: border-box;
-padding: 4em;
+  padding: 4em;
 }
 hr {
   border: 3px solid white;
@@ -28,41 +33,40 @@ hr {
 }
 
 .slideshow {
+  margin: auto;
   display: flex;
   justify-content: center;
+  border: 3px solid black;
 }
 
-.subscribeBttn{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:var(--accent);
-	color:#FFF;
-	border-radius:50px;
-  border-color: white;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-#about, #highlights {
+.subscribeBttn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--accent);
   color: #fff;
-text-align: center;
-background-color: var(--accent);
-margin: auto auto auto;
-
+  border-radius: 50px;
+  border-color: white;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
 }
 
+#about,
+#highlights {
+  color: #fff;
+  text-align: center;
+  background-color: var(--accent);
+  margin: auto auto auto;
+}
 
 .parallax {
   /* The image used */
   background-image: url("assets/cyberrangeHomepage.PNG");
-  //opacity: 0.5;
 
   /* Set a specific height */
   min-height: 500px;
-  //height: 150px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -70,25 +74,29 @@ margin: auto auto auto;
   background-repeat: no-repeat;
   background-size: cover;
 
-  .backbox {
-    background-color: rgba(white, 0.3);
-    width: auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .opacity {
+    background: rgba(#ffffff, 0.6);
     height: 100%;
+    width: 100%;
 
     #uni {
       font-weight: 700;
       font-size: 1.2em;
-      }
+    }
 
-      #org {
-        font-weight: 900;
-        font-size: 2.5em;
-        margin-top: .8em;
-        line-height: 100%;
-        color: var(--accent);
-        text-transform: capitalize;
-      }
+    #org {
+      font-weight: 900;
+      font-size: 2.5em;
+      margin-top: 0.8em;
+      line-height: 100%;
+      color: var(--accent);
+      text-transform: capitalize;
+    }
   }
 }
-
-
