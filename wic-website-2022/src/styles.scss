@@ -63,10 +63,10 @@ hr {
 
 .parallax {
   /* The image used */
-  background-image: url("assets/cyberrangeHomepage.PNG");
+  background-image: url("./assets/cyberrangeHomepage.PNG");
 
   /* Set a specific height */
-  min-height: 500px;
+  height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -84,6 +84,9 @@ hr {
     background: rgba(#ffffff, 0.6);
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     #uni {
       font-weight: 700;
