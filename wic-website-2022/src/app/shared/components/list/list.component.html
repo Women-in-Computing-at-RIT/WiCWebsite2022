@@ -1,0 +1,16 @@
+<ul class="list">
+  <li>
+
+  </li>
+</ul>
+
+<li class="listItem" class="flex-horizontal" *ngFor="let item of list.items">
+  <!-- Date / Month Col-->
+  <div class="flex-veritcal">
+    <span *ngIf="item.date">{{item.date. ? item.date[0]?.getMonth()}}</span>
+    <!-- <span *ngIf="item.day || item.date">{{item.date?.getUTCDate() || item.day}}</span> -->
+  </div>
+  <div class="flex-horizontal">
+    <span></span>
+  </div>
+</li>

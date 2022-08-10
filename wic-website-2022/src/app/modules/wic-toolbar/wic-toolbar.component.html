@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="rit-logo">
+    <img src="../../../assets/ritlogo.png" alt="rit logo">
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <button>
+      <img src="../../../assets/logo.png" width="100">
+    </button>
+
+    <div class="flex">
+      <ng-template ngFor let-button [ngForOf]="toolbarButtons">
+        <ng-template [ngIf]="button.links.length > 1" [ngIfElse]="buttonLink">
+          <app-menu-button [links]="button.links" [title]="button.text"></app-menu-button>
+        </ng-template>
+        <ng-template #buttonLink>
+          <button mat-button (click)="goToLink(button.links[0].link)">{{button.text}}</button>
+        </ng-template>
+      </ng-template>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

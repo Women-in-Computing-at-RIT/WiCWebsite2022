@@ -1,0 +1,4 @@
+<button class="mat-button" mat-button [matMenuTriggerFor]="menu">{{title}}</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let link of links" (click)="goToLink(link.link)">{{link.text}}</button>
+</mat-menu>
