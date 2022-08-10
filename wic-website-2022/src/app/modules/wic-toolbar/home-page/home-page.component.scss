@@ -1,18 +1,23 @@
 .parallax {
-    /* The image used */
-    // background-image: url("../../../../assets/");
+  /* The image used */
+  // background-image: url("../../../../assets/");
 
-    /* Set a specific height */
-   height: 500px;
+  /* Set a specific height */
+  height: 500px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-  .slideshow {
-    width: 400px;
-    height: 300px;
-  }
+.slideshow {
+  width: 400px;
+  height: 300px;
+}
+
+a {
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,1 @@
+export const DAY_TO_MS = (24*60*60*1000);
