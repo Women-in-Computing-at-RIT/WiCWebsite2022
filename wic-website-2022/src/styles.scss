@@ -105,3 +105,21 @@ hr {
     }
   }
 }
+
+.event {
+  .date {
+    align-items: center;
+    justify-items: space-between;
+    max-width: 20px;
+  };
+
+  .month {
+    height: 20%;
+  }
+
+  .day {
+    align-items: flex-end;
+    height: 80%;
+    font-size: 200%;
+  }
+}

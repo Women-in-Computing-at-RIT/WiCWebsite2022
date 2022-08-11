@@ -22,7 +22,9 @@
 </section>
 
 <section id="events">
-  <app-event-list-item></app-event-list-item>
+  <ng-container *ngFor="let event of events">
+    <app-event-list-item [event]="event"></app-event-list-item>
+  </ng-container>
 
 </section>
 
