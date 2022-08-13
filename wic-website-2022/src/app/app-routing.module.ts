@@ -4,6 +4,7 @@ import { WicNavbarComponent } from './shared/components/wic-navbar/wic-navbar/wi
 
 //#region Toolbar Links Import
 //#region About
+import { ConstitutionComponent } from './modules/sub-pages/sub-pages/about/constitution/constitution.component';
 import { MissionComponent } from './modules/sub-pages/sub-pages/about/mission/mission.component';
 import { FaqComponent } from './modules/sub-pages/sub-pages/about/faq/faq.component';
 import { AlumniComponent } from './modules/sub-pages/sub-pages/about/alumni/alumni.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'alumni', component: AlumniComponent, pathMatch: 'full' }, 
   { path: 'scholarship', component: ScholarshipsComponent, pathMatch: 'full' }, 
   { path: 'tutoring', component: TutoringComponent, pathMatch: 'full' }, 
+  { path: 'consitution', component: ConstitutionComponent, pathMatch: 'full' }, 
   //#endregion
   //#region events 
   { path: 'afterhours', component: AfterHoursComponent, pathMatch: 'full' }, 

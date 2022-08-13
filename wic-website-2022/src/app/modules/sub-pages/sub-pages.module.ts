@@ -17,6 +17,7 @@ import { ContactComponent } from './sub-pages/contact/contact.component';
 
 import { WicHeaderModule } from '@app/shared/components/wic-header/wic-header.module';
 import { CarouselModule } from '@app/shared/components/carousel/carousel.module';
+import { ConstitutionComponent } from './sub-pages/about/constitution/constitution.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { CarouselModule } from '@app/shared/components/carousel/carousel.module'
     OutreachComponent,
     AlliesComponent,
     SponsorComponent,
-    ContactComponent
+    ContactComponent,
+    ConstitutionComponent
   ],
   imports: [
     CommonModule,
