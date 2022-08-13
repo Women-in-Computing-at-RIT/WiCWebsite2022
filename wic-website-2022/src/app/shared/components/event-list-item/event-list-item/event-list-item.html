@@ -1,0 +1,17 @@
+<div class="event flex">
+  <div class="flex-col date">
+    <span class="month">{{event.start.toLocaleString('default', { month: 'long' })}}</span>
+    <span class="day">{{event.start.getDay()}}</span>
+  </div>
+  <div class="flex-col">
+    <span class="title">{{event.title}}</span>
+    <div class="flex">
+      <mat-icon fontIcon="schedule" class="material-icons-outlined"></mat-icon>
+      <span class="event-text"></span>{{ event.start | date: timeText}} - {{ event.end | date: timeText }}<span
+        class="event-text"></span>
+    </div>
+    <div>
+      <mat-icon></mat-icon><span class="event-text"></span>
+    </div>
+  </div>
+</div>

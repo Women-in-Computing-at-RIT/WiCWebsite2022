@@ -1,0 +1,35 @@
+/*#region flex-box*/
+.flex {
+    display: flex;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/*#endregion*/
+
+/*#region box-model*/
+.no-margins {
+    margin: 0px 0px;
+}
+
+.no-padding {
+    padding: 0px 0px;
+}
+/*#endregion*/
+
+.float {
+    z-index: 10;
+    width: 100VW;
+    position: fixed;
+}
+.hide {
+    visibility: hidden;
+}
