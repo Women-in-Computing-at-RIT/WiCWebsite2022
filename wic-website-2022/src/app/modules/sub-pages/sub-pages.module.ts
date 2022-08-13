@@ -14,14 +14,16 @@ import { OutreachComponent } from './sub-pages/committees/outreach/outreach.comp
 import { AlliesComponent } from './sub-pages/committees/allies/allies.component';
 import { SponsorComponent } from './sub-pages/sponsor/sponsor.component';
 import { ContactComponent } from './sub-pages/contact/contact.component';
+import { CommitteeHeadsComponent } from './sub-pages/committees/committee-heads/committee-heads.component';
 
 import { WicHeaderModule } from '@app/shared/components/wic-header/wic-header.module';
 import { CarouselModule } from '@app/shared/components/carousel/carousel.module';
 import { ConstitutionComponent } from './sub-pages/about/constitution/constitution.component';
 
-
+// @DARLENE Modules are where you declare many components of a similar type
+// I placed all the subpages here to make sure that they are togher. Plus, they require the same elements in some cases
 @NgModule({
-  declarations: [
+  declarations: [ 
     MissionComponent,
     FaqComponent,
     AlumniComponent,
@@ -36,15 +38,14 @@ import { ConstitutionComponent } from './sub-pages/about/constitution/constituti
     AlliesComponent,
     SponsorComponent,
     ContactComponent,
-    ConstitutionComponent
+    ConstitutionComponent,
+    CommitteeHeadsComponent
   ],
-  imports: [
+  imports: [ // @DARLENE if you want to use the committeehead component you make outside of this moduel, you would place the sub pages MODUEL into the imports of the module that declared the component you want to put the committee heads component into 
     CommonModule,
     WicHeaderModule,
     CarouselModule,
   ],
-  exports: [
-    AfterHoursComponent
-  ]
+  exports: []  // @DARLENE You would need to export components here in order to use them outside as well
 })
 export class SubPagesModule { }

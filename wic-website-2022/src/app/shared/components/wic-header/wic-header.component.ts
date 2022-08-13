@@ -2,8 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-wic-header',
-  templateUrl: './wic-header.component.html',
-  styleUrls: ['./wic-header.component.scss']
+  template: `
+    <div class="sectionTitle">
+      <ng-content></ng-content>
+    </div>
+    <div class="line"></div>
+  `,
 })
-export class WicHeaderComponent  {
-}
+export class WicHeaderComponent {}
