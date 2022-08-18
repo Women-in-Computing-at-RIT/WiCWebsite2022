@@ -19,11 +19,13 @@ import { CommitteeHeadsComponent } from './sub-pages/committees/committee-heads/
 import { WicHeaderModule } from '@app/shared/components/wic-header/wic-header.module';
 import { CarouselModule } from '@app/shared/components/carousel/carousel.module';
 import { ConstitutionComponent } from './sub-pages/about/constitution/constitution.component';
+import { CommitteeCardComponent } from './sub-pages/committee-card/committee-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 // @DARLENE Modules are where you declare many components of a similar type
 // I placed all the subpages here to make sure that they are togher. Plus, they require the same elements in some cases
 @NgModule({
-  declarations: [ 
+  declarations: [
     MissionComponent,
     FaqComponent,
     AlumniComponent,
@@ -39,12 +41,17 @@ import { ConstitutionComponent } from './sub-pages/about/constitution/constituti
     SponsorComponent,
     ContactComponent,
     ConstitutionComponent,
-    CommitteeHeadsComponent
+    CommitteeHeadsComponent,
+    CommitteeCardComponent
   ],
-  imports: [ // @DARLENE if you want to use the committeehead component you make outside of this moduel, you would place the sub pages MODUEL into the imports of the module that declared the component you want to put the committee heads component into 
+  imports: [ // @DARLENE if you want to use the committeehead component you make outside of this moduel,
+  //you would place the sub pages MODUEL into the imports of the module that declared the component you want
+  //to put the committee heads component into
     CommonModule,
     WicHeaderModule,
     CarouselModule,
+    MatCardModule,
+
   ],
   exports: []  // @DARLENE You would need to export components here in order to use them outside as well
 })

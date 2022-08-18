@@ -8,8 +8,9 @@ import { HomePageModule } from './modules/home-page/home-page.module';
 import { SubPagesModule } from './modules/sub-pages/sub-pages.module';
 import { WicToolBarModule } from './modules/wic-toolbar/wic-toolbar.module';
 
+
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
   ],
   imports: [
@@ -17,8 +18,9 @@ import { WicToolBarModule } from './modules/wic-toolbar/wic-toolbar.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HomePageModule,
-    SubPagesModule, 
+    SubPagesModule,
     WicToolBarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

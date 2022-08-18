@@ -34,19 +34,19 @@ export class WicToolbarComponent {
     }, {
       text: 'committees',
       links: [
-        { link: 'committees', text: 'committee heads' },
+        { link: 'committeeheads', text: 'committee heads' },
         { link: 'projects', text: 'projects' },
         { link: 'allies', text: 'allies' },
         { link: 'outreach', text: 'outreach' },
       ]
-    },{ 
-      text: 'blog', 
+    },{
+      text: 'blog',
       links: [{link: 'blog', text: '', }]
-    }, { 
-      text: 'sponsor', 
+    }, {
+      text: 'sponsor',
       links: [{link: 'sponsor', text: '', }]
-    }, { 
-      text: 'contact us', 
+    }, {
+      text: 'contact us',
       links: [{link: 'contact', text: '', }]
     },
   ]
