@@ -8,6 +8,7 @@ import Link from '@app/shared/models/inputs/link';
 })
 export class WicNavbarComponent {
   @Input() links: Link[] = []
+  @Input() title: string = '';
 
   /**
    *

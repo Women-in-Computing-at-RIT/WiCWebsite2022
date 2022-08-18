@@ -26,9 +26,8 @@ export class WicToolbarComponent {
       text: 'events',
       links: [
         { link: 'afterhours', text: 'after hours' },
-        { link: 'events', text: 'upcoming calendar' },
+        { link: 'calendar', text: 'upcoming calendar' },
         { link: 'wichacks', text: 'wichacks' },
-        { link: 'scholarships', text: 'scholarships' },
         { link: 'annualevents', text: 'annual events' },
       ]
     }, {

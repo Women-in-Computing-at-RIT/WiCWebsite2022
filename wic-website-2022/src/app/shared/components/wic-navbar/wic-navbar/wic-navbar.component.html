@@ -1,3 +1,6 @@
+<app-wic-header>{{title}}</app-wic-header>
 <div class="sidebarlinks flex-col">
-    <a *ngFor="let link in links" [href]="link.link">{{link.text}}</a>
+    <ng-container *ngFor="let link of links">
+        <a [href]="link.link">{{link.text}}</a>
+    </ng-container>
 </div>
