@@ -8,10 +8,11 @@ import { HomePageModule } from './modules/home-page/home-page.module';
 import { SubPagesModule } from './modules/sub-pages/sub-pages.module';
 import { WicToolBarModule } from './modules/wic-toolbar/wic-toolbar.module';
 import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './modules/footer/footer.component';
 
 @NgModule({
   declarations: [		
-    AppComponent,
+    AppComponent, FooterComponent,
   ],
   imports: [
     BrowserModule,

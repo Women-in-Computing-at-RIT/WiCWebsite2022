@@ -21,6 +21,9 @@ import { SharedModule } from '@app/shared/shared.module';
 import { WicNavbarModule } from '@app/shared/components/wic-navbar/wic-navbar.module';
 import { CommonModule } from '@angular/common';
 import { EventLinksComponent } from './sub-pages/events/event-links-component';
+import { AboutLinksComponent } from './sub-pages/about/about-component';
+import { WicSummaryListModule } from '@app/shared/components/wic-summary-list/wic-summary-list/wic-summary-list.module';
+import { CommitteeLinksComponent } from './sub-pages/committees/committee-links.component';
 
 // @DARLENE Modules are where you declare many components of a similar type
 // I placed all the subpages here to make sure that they are togher. Plus, they require the same elements in some cases
@@ -42,6 +45,8 @@ import { EventLinksComponent } from './sub-pages/events/event-links-component';
     ContactComponent,
     CommitteeHeadsComponent,
     EventLinksComponent,
+    AboutLinksComponent,
+    CommitteeLinksComponent,
   ],
   imports: [
     // @DARLENE if you want to use the committeehead component you make outside of this moduel, you would place the sub pages MODUEL into the imports of the module that declared the component you want to put the committee heads component into
@@ -50,6 +55,7 @@ import { EventLinksComponent } from './sub-pages/events/event-links-component';
     WicHeaderModule,
     CarouselModule,
     WicNavbarModule,
+    WicSummaryListModule,
   ],
   exports: [], // @DARLENE You would need to export components here in order to use them outside as well
 })

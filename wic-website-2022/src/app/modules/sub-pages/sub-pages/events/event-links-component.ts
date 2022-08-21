@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import Link from '@app/shared/models/inputs/link';
 
 @Component({
-  selector: 'app-events',
+  selector: 'app-event-links',
   template: `
   <app-wic-navbar [links]="links" title="Events"></app-wic-navbar>
   `

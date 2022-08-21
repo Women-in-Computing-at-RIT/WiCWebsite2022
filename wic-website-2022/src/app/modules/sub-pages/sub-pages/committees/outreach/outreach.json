@@ -1,0 +1,27 @@
+[
+  {
+    "info": [
+      {
+        "title": "ROCGirlHacks",
+        "summary": "Girls as young as eight-years-old used their laptops, imagination and teamwork skills for social good at ROCGirlHacks Powered by AT&T, Rochester's first all-girl youth hackathon hosted Oct. 28 at Rochester Institute of Technology."
+      },
+      {
+        "title": "",
+        "summary": "The free hackathon was intended for all girls in grades 3-12, including those who have never programmed before, those who are already building apps and anyone in between. The learning program challenged participants to come up with technological solutions and tools to address the growing problem of cyberbullying and internet safety. The event was a collaboration between iCanCode, Women in Computing at RIT and AT&T. The program was born out of a desire to expand coding opportunities for Rochester-area girls and to encourage them to enter the field of technology, specifically coding, an industry that is statistically male-dominant."
+      }
+    ],
+    "img": "../../../../../../assets/outreach1.jpeg"
+  },
+  {
+    "info": [
+      {
+        "title": "Buildium Women in Technology Scholarship",
+        "summary": "Girl Scouts spend the day with Women in Computing undergraduate student instructors and mentors to earn their Technology Badge. These workshops were created to help inspire young girls to consider studying computing or as a career choice.\n The following Technology Badge Workshops were offered to Juniors, Cadettes, Seniors and Ambassador levels: "
+      },
+      {
+        "summary": "Entertainment Technology Badge\nDigital Movie Maker\nWebsite Design Badge"
+      }
+    ],
+    "img": "../../../../../../assets/outreach2.jpeg"
+  }
+]

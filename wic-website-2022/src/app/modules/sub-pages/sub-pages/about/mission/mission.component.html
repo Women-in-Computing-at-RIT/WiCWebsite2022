@@ -1,10 +1,81 @@
-<app-wic-header>Mission</app-wic-header>
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/Bd40IdvBxdA"
-  title="Advancing the Success of Women - Shannon McHale - Faces of RIT"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>
+<div class="flex sub-page">
+  <app-about-links></app-about-links>
+  <article>
+    <app-wic-header>Mission</app-wic-header>
+    <p>
+      Women in Computing at the Rochester Institute of Technology (WiC at RIT)
+      is an all inclusive organization that provides an interdisciplinary
+      networking forum for students, faculty, staff and alumni involved in the
+      field of computing at The Rochester Institute of Technology through
+      professional, leadership, mentorship, and technical development
+      opportunities. WiC at RIT will also encourage the advancement of women and
+      all gender minorities in computing through community outreach.
+    </p>
+    <button mat-button>
+      <a href="http://wic.rit.edu/pdfs/WiC%20Constitution%2019-20.pdf"
+        >Constitution</a
+      >
+    </button>
+    <div class="flex">
+      <img [src]="assetLink + '1.jpeg'" />
+      <img [src]="assetLink + '2.jpeg'" />
+      <img [src]="assetLink + '3.jpeg'" />
+    </div>
+
+    <app-wic-header>Who we Are</app-wic-header>
+    <p>
+      Women in Computing at Rochester Institute of Technology is dedicated to
+      promoting the success and advancement of women and all gender minorities
+      in their academic and professional careers. Lana Verschage, the Director
+      of Women in Computing, works with all WiC Committee Heads and active
+      members. Our ultimate goal is to empower all in computing fields to
+      succeed and thrive at Rochester Institute of Technology and beyond.
+    </p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Bd40IdvBxdA"
+      title="Advancing the Success of Women - Shannon McHale - Faces of RIT"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <app-wic-header>Goals</app-wic-header>
+    <ul>
+      <li>
+        To make the field of computing seem less intimidating to women and all
+        gender minorities and allow them to become better integrated within it.
+      </li>
+      <li>
+        To break down gender barriers in the field and promote a truly equal and
+        inclusive environment.  
+      </li>
+      <li>
+        To organize social events to strengthen relationships to encourage those
+        who may feel ostracized.
+      </li>
+      <li>
+        To encourage students ages K-12 to explore computing through outreach
+        programs, camps, and mentorship.
+      </li>
+      <li>
+        To create opportunities for members to gain and expand their technical
+        knowledge through projects, WiCHacks, tech talks, and conferences.
+      </li>
+      <li>
+        To provide a channel for distributing event information from other
+        organizations within the field.
+      </li>
+      <li>
+        To accumulate technical news, knowledge, and information for use in
+        encouraging the involvement of women and all gender minorities in the
+        field of computing and providing a clearer path to success within it.
+      </li>
+
+      <app-wic-header>Get Involved</app-wic-header>
+      All members of the Rochester Institute of Technology community are
+      eligible to get involved with WiC at RIT.
+    </ul>
+  </article>
+</div>

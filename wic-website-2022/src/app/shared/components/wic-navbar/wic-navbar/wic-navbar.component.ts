@@ -10,7 +10,8 @@ export class WicNavbarComponent {
   @Input() links: Link[] = []
   @Input() title: string = '';
 
-  /**
+  /**@TODO 
+   * if title matches link have the title be bolded and purble
    *
    */
   constructor() {

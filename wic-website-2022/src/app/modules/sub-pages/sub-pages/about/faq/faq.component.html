@@ -1,1 +1,19 @@
-<p>faq works!</p>
+<div class="flex sub-page">
+  <app-about-links></app-about-links>
+  <article>
+    <app-wic-header>Frequently Asked Questions</app-wic-header>
+    <ng-container *ngFor="let question of questions; let i = index">
+      <h3>{{ question.question }}</h3>
+      <ul>
+        <li *ngFor="let answer of question.answers">
+          {{ answer }}
+        </li>
+      </ul>
+      <div *ngIf="(i + 1) % imageInsert === 0 && i !== 0" class="flex">
+        <ng-container *ngFor="let link of getImageLinks(i)">
+          <img [src]="link">
+        </ng-container>
+      </div>
+    </ng-container>
+  </article>
+</div>

@@ -1,1 +1,37 @@
-<p>allies works!</p>
+<div class="flex sub-page">
+  <app-committee-links></app-committee-links>
+  <article>
+    <app-wic-header>Allies</app-wic-header>
+    <p>
+      The WiC Allies committee within Women in Computing purpose is to help and
+      support the goals of our organization as a whole. We want to affect
+      positive change and foster a more inclusive GCCIS (Golisano College of
+      Computing and Information Sciences) culture.<br />
+
+      At the Allies committee meetings, we discuss gender-related issues in
+      computing and host/support events to help encourage resolution. Allies
+      also volunteer for WiC events and are members of other WiC committees.<br />
+
+      WiC Allies is an all inclusive group including any identification
+      encourages collaboration across all genders to solve gender issues.<br />
+
+      Join the conversation by attending one of our meetings or workshops.
+    </p>
+    <div class="flex img">
+        <img *ngFor="let img of images" [src]="img">
+    </div>
+    <app-wic-header>Spotlight</app-wic-header>
+    <div class="wrapper">
+      <iframe
+        style="margin-top: 2em"
+        src="https://docs.google.com/presentation/d/e/2PACX-1vQqwps5546lfghlaPZk05O3G6xOR676VqU7fzkAw5h5kXsn4bhvfrmWBfE0QHTAh3XfJgsnbNkbUJ3k/embed?start=false&loop=false&delayms=3000"
+        frameborder="0"
+        width="100%"
+        height="569"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+      ></iframe>
+    </div>
+  </article>
+</div>

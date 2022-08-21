@@ -38,9 +38,6 @@ export class WicToolbarComponent {
         { link: 'allies', text: 'allies' },
         { link: 'outreach', text: 'outreach' },
       ]
-    },{ 
-      text: 'blog', 
-      links: [{link: 'blog', text: '', }]
     }, { 
       text: 'sponsor', 
       links: [{link: 'sponsor', text: '', }]

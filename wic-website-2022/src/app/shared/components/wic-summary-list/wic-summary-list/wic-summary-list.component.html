@@ -1,0 +1,11 @@
+<div class="summary-wrapper flex" *ngFor="let item of list">
+    <img *ngIf="item.img" [src]="item.img">
+    <div class="summary">
+        <div *ngFor="let info of item.info" class="summary-info">
+            <h3>{{info.title}}</h3>
+            <p>{{info.summary}}</p>
+        </div>
+        <span *ngIf="item.linkText">{{item.linkText}}</span><a *ngIf="item.link" [href]="item.link.link">{{item.link.text}}</a>
+    </div>
+    <hr>
+</div>

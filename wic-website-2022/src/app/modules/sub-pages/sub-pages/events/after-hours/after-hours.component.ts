@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import Link from '@app/shared/models/inputs/link';
 
 @Component({
@@ -6,9 +6,12 @@ import Link from '@app/shared/models/inputs/link';
   templateUrl: './after-hours.component.html',
   styleUrls: ['./after-hours.component.scss']
 })
-export class AfterHoursComponent {
-  // slides: string[] = ['afterhours1.jpeg'];
-  slides: string[] = ['../../../../../../assets/afterhours1.jpeg'];
+export class AfterHoursComponent implements OnInit {
+
+  // @TODO: Student story
+  imgCount = 5
+  slides: string[] = []
+  readonly assetLink = '../../../../../../assets/afterhours';
   links: Link[] = [
     {
       text: 'FAQ',
@@ -28,4 +31,9 @@ export class AfterHoursComponent {
     },
   ]
 
+  ngOnInit(): void {
+    for (let i = 1; i < this.imgCount + 1; i++) {
+      this.slides.push(`${this.assetLink}${i}.jpeg`)
+    }
+  }
 }

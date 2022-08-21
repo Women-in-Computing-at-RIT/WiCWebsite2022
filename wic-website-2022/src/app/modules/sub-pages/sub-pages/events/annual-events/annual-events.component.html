@@ -1,1 +1,10 @@
-<p>annual-events works!</p>
+<div class="flex sub-page">
+    <app-event-links></app-event-links>
+    <article>
+      <app-wic-header>Annual Events</app-wic-header>
+      <app-wic-summary-list [list]="eventList"></app-wic-summary-list>
+      <app-wic-header>Conferences</app-wic-header>
+      <app-wic-summary-list [list]="conferenceList"></app-wic-summary-list>
+    </article>
+  </div>
+  
