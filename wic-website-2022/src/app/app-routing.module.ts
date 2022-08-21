@@ -16,6 +16,7 @@ import { WichacksComponent } from './modules/sub-pages/sub-pages/events/wichacks
 import { AnnualEventsComponent } from './modules/sub-pages/sub-pages/events/annual-events/annual-events.component';
 //#endregion Events
 //#region Committees
+import { CommitteeHeadsComponent } from './modules/sub-pages/sub-pages/committees/committee-heads/committee-heads.component';
 import { ProjectsComponent } from './modules/sub-pages/sub-pages/committees/projects/projects.component';
 import { AlliesComponent } from './modules/sub-pages/sub-pages/committees/allies/allies.component';
 import { OutreachComponent } from './modules/sub-pages/sub-pages/committees/outreach/outreach.component';
@@ -23,7 +24,7 @@ import { OutreachComponent } from './modules/sub-pages/sub-pages/committees/outr
 //#region Direct Links
 import { ContactComponent } from './modules/sub-pages/sub-pages/contact/contact.component';
 import { SponsorComponent } from './modules/sub-pages/sub-pages/sponsor/sponsor.component';
-import { HomePageComponent } from './modules/home-page/home-page.component'; 
+import { HomePageComponent } from './modules/home-page/home-page.component';
 //#endregion Direct Links
 //#endregion Toolbar Links
 
@@ -34,22 +35,23 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent, pathMatch:'full'},
   //#endregion
   //#region about
-  { path: 'mission', component: MissionComponent, pathMatch: 'full' }, 
-  { path: 'faq', component: FaqComponent, pathMatch: 'full' }, 
-  { path: 'alumni', component: AlumniComponent, pathMatch: 'full' }, 
-  { path: 'scholarships', component: ScholarshipsComponent, pathMatch: 'full' }, 
-  { path: 'tutoring', component: TutoringComponent, pathMatch: 'full' }, 
+  { path: 'mission', component: MissionComponent, pathMatch: 'full' },
+  { path: 'faq', component: FaqComponent, pathMatch: 'full' },
+  { path: 'alumni', component: AlumniComponent, pathMatch: 'full' },
+  { path: 'scholarship', component: ScholarshipsComponent, pathMatch: 'full' },
+  { path: 'tutoring', component: TutoringComponent, pathMatch: 'full' },
   //#endregion
-  //#region events 
-  { path: 'afterhours', component: AfterHoursComponent, pathMatch: 'full' }, 
-  { path: 'calendar', component: UpcomingCalendarComponent, pathMatch: 'full' }, 
-  { path: 'wichacks', component: WichacksComponent, pathMatch: 'full' }, 
-  { path: 'annualevents', component: AnnualEventsComponent, pathMatch: 'full' }, 
+  //#region events
+  { path: 'afterhours', component: AfterHoursComponent, pathMatch: 'full' },
+  { path: 'calendar', component: UpcomingCalendarComponent, pathMatch: 'full' },
+  { path: 'wichacks', component: WichacksComponent, pathMatch: 'full' },
+  { path: 'annualevents', component: AnnualEventsComponent, pathMatch: 'full' },
   //#endregion
   //#region Committees
-  { path: 'projects', component: ProjectsComponent, pathMatch: 'full' }, 
-  { path: 'allies', component: AlliesComponent, pathMatch: 'full' }, 
-  { path: 'outreach', component: OutreachComponent, pathMatch: 'full' }, 
+  { path: 'committeeheads', component: CommitteeHeadsComponent, pathMatch: 'full' },
+  { path: 'projects', component: ProjectsComponent, pathMatch: 'full' },
+  { path: 'allies', component: AlliesComponent, pathMatch: 'full' },
+  { path: 'outreach', component: OutreachComponent, pathMatch: 'full' },
   //#endregion
   { path: '**', redirectTo:'', pathMatch: 'full' }, // redirect unknown routes to homepage
 ];

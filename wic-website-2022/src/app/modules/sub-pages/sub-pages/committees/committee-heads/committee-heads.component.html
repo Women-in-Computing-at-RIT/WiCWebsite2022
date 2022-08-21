@@ -1,1 +1,8 @@
-<p>committee-heads works!</p>
+<h2>Meet the Committee Heads</h2>
+<hr/>
+<div class="container" >
+  <div *ngFor="let committeeHead of committeeHeads">
+      <app-committee-card [committeeHead]="committeeHead"></app-committee-card>
+  </div>
+</div>
+

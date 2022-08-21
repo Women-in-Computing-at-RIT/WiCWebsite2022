@@ -10,6 +10,7 @@ import { WicToolBarModule } from './modules/wic-toolbar/wic-toolbar.module';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './modules/footer/footer.component';
 
+
 @NgModule({
   declarations: [		
     AppComponent, FooterComponent,
@@ -19,9 +20,8 @@ import { FooterComponent } from './modules/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HomePageModule,
-    SubPagesModule, 
+    SubPagesModule,
     WicToolBarModule,
-    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
