@@ -38,7 +38,7 @@ const routes: Routes = [
   { path: 'mission', component: MissionComponent, pathMatch: 'full' },
   { path: 'faq', component: FaqComponent, pathMatch: 'full' },
   { path: 'alumni', component: AlumniComponent, pathMatch: 'full' },
-  { path: 'scholarship', component: ScholarshipsComponent, pathMatch: 'full' },
+  { path: 'scholarships', component: ScholarshipsComponent, pathMatch: 'full' },
   { path: 'tutoring', component: TutoringComponent, pathMatch: 'full' },
   //#endregion
   //#region events

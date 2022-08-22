@@ -20,6 +20,7 @@ import { FooterComponent } from './modules/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HomePageModule,
+    MatIconModule,
     SubPagesModule,
     WicToolBarModule,
   ],

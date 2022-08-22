@@ -1,16 +1,17 @@
 <mat-card class="committee-head-card">
   <mat-card-header>
-
-    <mat-card-title>{{committeeHead.name}}</mat-card-title>
-    <mat-card-subtitle>{{committeeHead.committee}}</mat-card-subtitle>
-    <mat-card-subtitle>{{committeeHead.office}}</mat-card-subtitle>
+    <mat-card-title>{{ committeeHead.name }}</mat-card-title>
+    <mat-card-subtitle>{{ committeeHead.committee }}</mat-card-subtitle>
+    <mat-card-subtitle>{{ committeeHead.office }}</mat-card-subtitle>
   </mat-card-header>
   <!-- add committee head pic here -->
-  <img mat-card-image src="{{committeeHead.image}}" alt="{{committeeHead.name}}">
+  <img
+    mat-card-image
+    src="{{ committeeHead.image }}"
+    alt="{{ committeeHead.name }}"
+  />
   <mat-card-content>
-    <p>{{committeeHead.responsibilities}}</p>
-    <h3 class="committeeMeetingTimes">{{committeeHead.meetingTime}}</h3>
+    <p>{{ committeeHead.responsibilities }}</p>
+    <h3 class="committeeMeetingTimes">{{ committeeHead.meetingTime }}</h3>
   </mat-card-content>
-
 </mat-card>
-

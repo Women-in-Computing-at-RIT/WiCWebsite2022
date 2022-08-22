@@ -11,12 +11,7 @@
       opportunities. WiC at RIT will also encourage the advancement of women and
       all gender minorities in computing through community outreach.
     </p>
-    <button mat-button>
-      <a href="http://wic.rit.edu/pdfs/WiC%20Constitution%2019-20.pdf"
-        >Constitution</a
-      >
-    </button>
-    <div class="flex">
+    <div class="flex img-row wic-button">
       <img [src]="assetLink + '1.jpeg'" />
       <img [src]="assetLink + '2.jpeg'" />
       <img [src]="assetLink + '3.jpeg'" />
@@ -49,7 +44,7 @@
       </li>
       <li>
         To break down gender barriers in the field and promote a truly equal and
-        inclusive environment.  
+        inclusive environment.
       </li>
       <li>
         To organize social events to strengthen relationships to encourage those
@@ -72,10 +67,14 @@
         encouraging the involvement of women and all gender minorities in the
         field of computing and providing a clearer path to success within it.
       </li>
-
-      <app-wic-header>Get Involved</app-wic-header>
+    </ul>
+    <app-wic-header>Get Involved</app-wic-header>
+    <p>
       All members of the Rochester Institute of Technology community are
       eligible to get involved with WiC at RIT.
-    </ul>
+    </p>
+    <button mat-raised-button color="primary">
+      <a mat-button href="http://wic.rit.edu/pdfs/WiC%20Constitution%2019-20.pdf" target="_blank">Constitution</a>
+    </button>
   </article>
 </div>

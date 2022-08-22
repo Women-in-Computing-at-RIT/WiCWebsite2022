@@ -11,8 +11,6 @@ export class EventListItemComponent implements OnInit {
   @Input() event!: EventListItem;
   timeText: string = 'shortTime';
 
-  readonly locationIcon = "place"
-  readonly linkIcon = "Open_in_New"
 
   constructor() { }
 

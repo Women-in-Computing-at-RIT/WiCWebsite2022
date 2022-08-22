@@ -26,7 +26,7 @@ import { WicSummaryListModule } from '@app/shared/components/wic-summary-list/wi
 import { CommitteeLinksComponent } from './sub-pages/committees/committee-links.component';
 import { CommitteeCardComponent } from './sub-pages/committee-card/committee-card.component';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatButtonModule } from '@angular/material/button';
 // @DARLENE Modules are where you declare many components of a similar type
 // I placed all the subpages here to make sure that they are togher. Plus, they require the same elements in some cases
 @NgModule({
@@ -59,6 +59,7 @@ import { MatCardModule } from '@angular/material/card';
     WicNavbarModule,
     WicSummaryListModule,
     MatCardModule,
+    MatButtonModule,
 
   ],
   exports: [],

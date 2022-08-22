@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { COMMITTEEHEADS } from './committee-heads-list';
 
 @Component({
@@ -7,13 +7,10 @@ import { COMMITTEEHEADS } from './committee-heads-list';
   styleUrls: ['./committee-heads.component.scss']
 })
 
-export class CommitteeHeadsComponent implements OnInit {
+export class CommitteeHeadsComponent {
 
   committeeHeads = COMMITTEEHEADS;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

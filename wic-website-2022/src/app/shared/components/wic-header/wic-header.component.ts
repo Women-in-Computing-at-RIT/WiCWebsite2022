@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   template: `
     <div class="sectionTitle">
       <ng-content></ng-content>
+      <div class="line"></div>
     </div>
-    <div class="line"></div>
   `,
 })
 export class WicHeaderComponent {}

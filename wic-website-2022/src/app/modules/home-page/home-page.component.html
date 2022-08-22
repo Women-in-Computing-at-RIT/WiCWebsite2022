@@ -1,35 +1,47 @@
-<button mat-fab color="primary" aria-label="Subscribe to Newsletter" class="subscribeBttn">
-  <mat-icon>forward_to_inbox</mat-icon>
-</button>
-
-<div class="whitespace"></div>
-
-<div class="parallax">
-  <div class="opacity">
-    <h1 id="uni">Rochester Institute of Technology</h1>
-    <h2 id="org">Women in Computing</h2>
+<div id="homepageWrapper">
+  <div class="parallax">
+    <div class="opacity">
+      <h2 id="uni">Rochester Institute of Technology</h2>
+      <h1 id="org">Women in Computing</h1>
+    </div>
   </div>
+
+  <section id="about">
+    <h2 class="sectionTitle">ABOUT US</h2>
+    <hr />
+    <p class="sectionText">
+      Women in Computing is dedicated to promoting the success and advancement
+      of women and all gender minorities in their academic and professional
+      careers.
+    </p>
+    <p><a href="url">Learn more about our mission</a></p>
+  </section>
+
+  <section id="events" class=flex>
+    <div>
+      <app-wic-header>Committees</app-wic-header>
+      <ng-container *ngFor="let event of events">
+        <app-event-list-item [event]="event"></app-event-list-item>
+      </ng-container>
+    </div>
+    <div>
+      <app-wic-header>Spring Events!</app-wic-header>
+      <ng-container *ngFor="let event of events">
+        <app-event-list-item [event]="event"></app-event-list-item>
+      </ng-container>
+    </div>
+    <div>
+      <app-wic-header>Spring Events!</app-wic-header>
+      <ng-container *ngFor="let event of events">
+        <app-event-list-item [event]="event"></app-event-list-item>
+      </ng-container>
+    </div>
+  </section>
+
+  <section id="highlights">
+    <h1>Member Highlights</h1>
+    <div class="slideshow">
+      <app-carousel [slides]="slides"></app-carousel>
+    </div>
+  </section>
 </div>
-
-<section id="about">
-<h2 class="sectionTitle">ABOUT US</h2>
-<hr/>
-<p class="sectionText">Women in Computing is dedicated to promoting the success and advancement of women and all gender minorities in their academic and professional careers.</p>
-<p><a href="url">Learn more about our mission</a></p>
-</section>
-
-<section id="events">
-  <app-wic-header>Spring Events!</app-wic-header>
-  <ng-container *ngFor="let event of events">
-    <app-event-list-item [event]="event"></app-event-list-item>
-  </ng-container>
-  
-</section>
-
-<section id="highlights">
-  <h1>Member Highlights</h1>
-<div class="slideshow">
-  <app-carousel [slides]="slides"></app-carousel>
-</div>
-</section>
-

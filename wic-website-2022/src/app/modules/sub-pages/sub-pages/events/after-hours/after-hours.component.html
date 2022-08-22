@@ -1,8 +1,10 @@
 <div class="flex sub-page">
   <app-wic-navbar [links]="links" title="Information"></app-wic-navbar>
-  <div class="wrapper">
+  <article>
     <app-wic-header>After Hours</app-wic-header>
-    <app-carousel [slides]="slides"></app-carousel>
+    <div class="carousel">
+      <app-carousel [slides]="slides"></app-carousel>
+    </div>
     <p>
       The Women in Computing (WiC) After Hours Program is a yearly event for
       women accepted into the B. Thomas Golisano College of Computing. This
@@ -18,5 +20,5 @@
       have been accepted to RIT's B. Thomas Golisano College of Computing and
       Information Sciences.
     </p>
-  </div>
+  </article>
 </div>

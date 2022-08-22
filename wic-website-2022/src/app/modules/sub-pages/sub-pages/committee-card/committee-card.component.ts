@@ -9,7 +9,6 @@ import { CommitteeHead } from '../committees/committee-heads/committee-head';
 export class CommitteeCardComponent {
 
   @Input() committeeHead!: CommitteeHead;
-  //committeeHead? = CommitteeHead;
 
   constructor() { }
 

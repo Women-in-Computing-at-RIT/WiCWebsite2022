@@ -9,7 +9,33 @@ a {
 }
 
 #events {
+  justify-content: space-around;
   background-color: white;
+}
+
+.event{
+  margin-right: 50px;
+}
+
+
+#org {
+  font-weight: 900;
+  font-size: 400%;
+  line-height: 100%;
+  color: var(--accent);
+  margin-top: .2em;
+  letter-spacing: .1em;
+  text-shadow: 2px 8px 8px rgba(41, 20, 84, 0.515)
+}
+
+#uni {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: #2B2B2B;
+  font-size: 150%;
+  font-weight: 900;
+  text-shadow: 2px 3px 4px rgba(41, 20, 84, 0.515)
 }
 
 #about,
@@ -20,4 +46,12 @@ a {
   color: #fff;
   text-align: center;
   margin: auto auto;
+}
+
+#about,
+#highlights {
+  color: #fff;
+  text-align: center;
+  background-color: var(--accent);
+  margin: auto auto auto;
 }

@@ -1,3 +1,25 @@
-a {
-    color: rgb(102, 102, 102)
+.ritcopy {
+    a {
+        color: white;
+    }
+    span {
+        margin: auto 5px;
+    }
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1A1A;
+    .address {
+        align-items: flex-end;
+    }
+}
+
+.social-media {
+    a {
+        color: rgb(102, 102, 102);
+        margin-right: 15px;
+    }
+    padding: 20px;
+    color: #1A1A1A;
+    background-color: #EEEEEE;
 }

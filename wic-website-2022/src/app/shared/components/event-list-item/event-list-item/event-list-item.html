@@ -1,17 +1,29 @@
-<div class="event flex">
-  <div class="flex-col date">
-    <span class="month">{{event.start.toLocaleString('default', { month: 'long' })}}</span>
-    <span class="day">{{event.start.getDay()}}</span>
-  </div>
-  <div class="flex-col">
-    <span class="title">{{event.title}}</span>
-    <div class="flex">
-      <mat-icon fontIcon="schedule" class="material-icons-outlined"></mat-icon>
-      <span class="event-text"></span>{{ event.start | date: timeText}} - {{ event.end | date: timeText }}<span
-        class="event-text"></span>
+<div class="wrapper">
+  <div class="title">{{event.title}}</div>
+  <div class="event flex">
+    <div class="date">
+      <span class="month">{{event.start.toLocaleString('default', { month: 'short' })}}</span>
+      <span class="day">{{event.start.getDay()}}</span>
     </div>
-    <div>
-      <mat-icon></mat-icon><span class="event-text"></span>
+    <div class="description">
+      <div class="flex schedule event-text">
+        <span class="icon material-symbols-outlined">
+          schedule
+          </span>
+        <span class="event-text">{{ event.start | date: timeText}} - {{ event.end | date: timeText }}</span>
+      </div>
+      <div class="flex link event-text" *ngIf="event.link">
+        <span class="icon material-symbols-outlined">
+          open_in_new
+          </span>
+          <a class="event-text" [href]="event.link.link">{{event.link.text}}</a>
+      </div>
+      <div class="flex location event-text" *ngIf="event.location">
+        <span class="icon material-symbols-outlined">
+          location_on
+          </span>
+          <span class="event-text">{{event.location}}</span>
+      </div>
     </div>
   </div>
 </div>

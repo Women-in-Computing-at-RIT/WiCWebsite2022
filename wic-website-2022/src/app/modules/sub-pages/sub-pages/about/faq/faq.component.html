@@ -3,13 +3,13 @@
   <article>
     <app-wic-header>Frequently Asked Questions</app-wic-header>
     <ng-container *ngFor="let question of questions; let i = index">
-      <h3>{{ question.question }}</h3>
+      <h3><b>{{ question.question }}</b></h3>
       <ul>
         <li *ngFor="let answer of question.answers">
           {{ answer }}
         </li>
       </ul>
-      <div *ngIf="(i + 1) % imageInsert === 0 && i !== 0" class="flex">
+      <div *ngIf="(i + 1) % imageInsert === 0 && i !== 0" class="flex img-row">
         <ng-container *ngFor="let link of getImageLinks(i)">
           <img [src]="link">
         </ng-container>
