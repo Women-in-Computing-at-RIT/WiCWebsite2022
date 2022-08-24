@@ -1,9 +1,9 @@
 <div class="wrapper">
   <div class="sectionTitle">{{ title }}</div>
   <div class="line"></div>
-  <div class="sidebarlinks flex-col">
+  <div class="flex-col">
     <ng-container *ngFor="let link of links">
-      <a [href]="link.link">{{ link.text }}</a>
+      <a [class]="selectedLink(link)" [href]="link.link">{{ link.text }}</a>
     </ng-container>
   </div>
 </div>

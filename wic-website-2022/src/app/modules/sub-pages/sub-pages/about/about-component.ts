@@ -10,7 +10,7 @@ import Link from '@app/shared/models/inputs/link';
 export class AboutLinksComponent {
   links = [
     new Link('After Hours', '/mission', true),
-    new Link('FAQ Calendar', '/faq', true),
+    new Link('FAQ', '/faq', true),
     new Link('Alumni', '/alumni', true),
     new Link('Tutoring', '/tutoring', true),
   ]

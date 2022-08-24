@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import Link from '@app/shared/models/inputs/link';
 
 @Component({
@@ -10,11 +11,10 @@ export class WicNavbarComponent {
   @Input() links: Link[] = []
   @Input() title: string = '';
 
-  /**@TODO 
-   * if title matches link have the title be bolded and purble
-   *
-   */
-  constructor() {
+  constructor(private router: Router) {
+  }
 
+  selectedLink(link: Link): string {
+    return (this.router.url.includes(link.link)) ? 'selected' : '';
   }
 }
