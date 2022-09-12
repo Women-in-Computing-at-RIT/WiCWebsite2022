@@ -1,22 +1,48 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row id="rit-logo">
-    <img src="../../../assets/ritlogo.png" alt="rit logo" width="250" height="24.5">
+    <img
+      src="../../../assets/ritlogo.png"
+      alt="rit logo"
+      width="250"
+      height="24.5"
+    />
   </mat-toolbar-row>
 
   <mat-toolbar-row class="flex space-between">
-    <button mat-icon-button>
-      <img src="../../../assets/logo.png" width="75">
+    <button *ngIf="!isMobile" mat-icon-button>
+      <img src="../../../assets/logo.png" width="75" />
     </button>
 
-    <div class="flex">
-      <ng-template ngFor let-button [ngForOf]="toolbarButtons">
-        <ng-template [ngIf]="button.links.length > 1" [ngIfElse]="buttonLink">
-          <app-menu-button [links]="button.links" [title]="button.text"></app-menu-button>
-        </ng-template>
-        <ng-template #buttonLink>
-          <button mat-button (click)="goToLink(button.links[0].link)">{{button.text}}</button>
-        </ng-template>
-      </ng-template>
-    </div>
+    <ng-container *ngIf="isMobile; then sideNav; else buttons"></ng-container>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<ng-template #sideNav>
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</ng-template>
+
+<ng-template #buttons>
+  <div [ngClass]="isMobile ? 'flex-col' : 'flex'" class="buttons">
+    <ng-template ngFor let-button [ngForOf]="toolbarButtons">
+      <ng-template [ngIf]="button.links.length > 1" [ngIfElse]="buttonLink">
+        <app-menu-button
+          [links]="button.links"
+          [title]="button.text"
+        ></app-menu-button>
+      </ng-template>
+      <ng-template #buttonLink>
+        <button mat-button (click)="goToLink(button.links[0].link)">
+          {{ button.text }}
+        </button>
+      </ng-template>
+    </ng-template>
+  </div>
+</ng-template>
+<mat-sidenav-container>
+  <mat-sidenav #drawer mode="over" fixedInViewport >
+      <ng-container *ngTemplateOutlet="buttons"></ng-container>
+  </mat-sidenav>
+</mat-sidenav-container >
+<div (click)="drawer.close()" *ngIf="isMobile && drawer.opened" class="opacity"></div>
